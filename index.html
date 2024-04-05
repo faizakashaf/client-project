@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css files/style.css">
+</head>
+
+<body>
+    <header id="header" class="head">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <img class="logo_image" src="./assets/logo.png" alt="logo">
+            </div>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list_item">
+
+                    <li class="list_item">
+                        <a href="#about" class="item">About Us</a>
+                    </li>
+                    <li class="list_item">
+                        <a href="#gallery" class="item">Gallery</a>
+                    </li>
+                    <li class="list_item contact_button">
+                        <a href="#contact" class="item">Contact Us</a>
+                    </li>
+                </ul>
+                <!--  close button -->
+                <div class="nav_close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <!--toggle button-->
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="ri-menu-fold-fill"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- hero section  -->
+        <section class="section home" id="home">
+            <video autoplay loop muted plays-inline class="home_video">
+                <source src="./assets/video.mp4" type="video/mp4">
+            </video>
+            <div class="video_overlay"></div>
+            <div class="home_container grid container">
+                <div class="home_data">
+                    <h1 class="home_title">Creating Magical Memories</h1>
+                    <h3 class="home_description">Weddings, galas, birthdays, and more, The Decor Quarters <br>
+                        helps you style, plan bespoke decor for every event.</h3>
+                    <a class="homeBtn" href="#contact">Start Planning</a>
+                </div>
+                <div class="scrolldown_arrow">
+                    <img src="assets/arrow.png" alt="arrow" class="arrow_down">
+                </div>
+            </div>
+
+        </section>
+        <!-- about section  -->
+        <section class="section about" id="about">
+            <div class="container about_container grid">
+                <div class="about_section_image">
+                    <img src="assets/about-img.jpeg" alt="image" class="aboutImg">
+                </div>
+                <div class="about_data">
+                    <h1 class="section_title about_title">About Us</h1>
+                    <p class="about_description">Welcome to The DecorQuarters, here we craft unforgettable memories
+                        through bespoke decor for <strong> Birthday parties, Weddings,</strong> and <strong>Corporate
+                            events.</strong> With our passion for
+                        creativity and attention to detail, we turn your vision into reality, transforming any space
+                        into a personalized and extraordinary experience. Our dedicated team works determinedly &
+                        tirelessly to ensure that every moment is special according to your need, leaving you with
+                        cherished memories that last a lifetime. Let's create magic together with The Decor Quarters.
+                    </p>
+                    <div class="insta_link_btn">
+                        <a href="https://www.instagram.com/thedecorquarters?igsh=YjhieHM1Z2dtaHFz" target="_blank"
+                            class="instaBtn">Visit
+                            Our Instagram</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

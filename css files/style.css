@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+    @font-face {
+        font-family: 'sendertime';
+        src: url('../Sendertime-Font/Sendertime-Font/sendertime.ttf') format('truetype'); 
+    }
+
+
+
+:root {
+    --header-height: 3.4rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --header-border : hsl(0, 0%, 72%);
+    --white-color: hsl(0, 0%, 100%);
+    --section-headings-color: hsl(358, 18%, 71%);
+    --black-color: hsl(0, 0%, 5%);
+    --contact-button-hover :hsl(4, 24%, 89%);
+    --button-hover-color: hsl(0, 17%, 75%);
+    --heading-bg-color:hsl(7, 26%, 93%);
+    --grey-text-color : hsl(0, 0%, 41%);
+    --scroll-bar-thumb: hsl(0, 10%, 86%);
+    /*========== Font and typography ==========*/
+    /* 1rem = 10px ...*/
+    --body-font: "Roboto", sans-serif;
+    --fancy-heading-fonts: 'sendertime', sans-serif;
+    --main-heading-font-size: 2.6rem;
+    --biggest-font-size: 3.2rem;
+    --bigger-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .825rem;
+    --small-font-size: .7rem;
+  
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-semi-bold: 500;
+    --font-bold: 700;
+  
+    /*========== z index ==========*/
+    --z-fixed: 100;
+  }
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body,
+  button {
+  
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+  }
+  
+  button {
+    border: none;
+    outline: none;
+  }
+  
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+   /*=============== REUSABLE CSS CLASSES ===============*/
+   .container {
+    max-width: 1120px;
+    margin-inline: 1.4rem;
+  }
+  .grid {
+    display: grid;
+
+  }
+  
+  .section {
+    padding: 4rem .5rem;
+  }
+  
+  .section_title {
+    font-size: var(--biggest-font-size);
+    font-family: var(--fancy-heading-fonts);
+    margin-bottom: 1.5rem;
+ 
+  }
+  
+  .main {
+    overflow: hidden; 
+  }
+
+    /*=============== Header ===============*/
+#header{
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+background-color: var(--white-color);
+z-index: var(--z-fixed);
+border-bottom: 1.5px solid var(--header-border);
+  }
+  
+.nav{
+  height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3.5rem;
+   
+  }
+.nav .nav_logo{
+display: inline-block;
+width: 24vw;
+height: 100%;
+
+}
+.nav .nav_logo .logo_image{
+  height: 100%;
+  width: 100%;
+  max-width: 100%; 
+  object-fit: cover;
+}
+.nav .nav_menu{
+ margin-left: auto;
+}
+.nav .nav_menu .nav_list_item{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: .7vw 0;
+}
+.nav .nav_menu .nav_list_item .list_item{
+  padding: 0 1.5vw;
+}
+.nav .nav_menu .nav_list_item .list_item .item{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--black-color);
+  font-family: var(--body-font);
+}
+.nav .nav_menu .nav_list_item .list_item .item:hover{
+  color: var(--button-hover-color);
+}
+.nav .nav_menu .nav_list_item .list_item.contact_button a,
+.home_data .homeBtn{
+
+background-color: var(--black-color);
+ padding: .7vw  1.75vw;
+ border: none;
+ outline: none;
+ border-radius: 1.2rem;
+ color: var(--white-color);
+}
+
+.nav .nav_menu .nav_list_item  .list_item.contact_button a:hover,
+.home_data .homeBtn:hover{
+  background-color: var(--contact-button-hover);
+  color: var(--black-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ /* --------Home Section ------ */
+ .home {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home_container {
+ row-gap: 3rem;
+}
+
+.home_data {
+  text-align: center; 
+  margin-top: 4rem;
+  padding: 1.4rem 1rem;
+}
+.home_data .home_title{
+font-size:var(--main-heading-font-size) ;
+color: var(--white-color);
+margin-bottom: .5rem;
+font-weight: var(--font-semi-bold);
+}
+.home_data .home_description{
+  font-size: var(--h3-font-size);
+  color: var(--white-color);
+  margin-bottom: 1.3rem;
+  font-family: var(--body-font);
+  font-weight: var(--font-regular);
+}
+.home_data .homeBtn{
+ font-size: var(--small-font-size);
+ font-weight: var(--font-semi-bold);
+ margin-top: .8rem;
+}
+.scrolldown_arrow{
+  width: 2.5rem;
+  height: auto;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.arrow_down:hover{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.arrow_down:hover{
+  background-color: hsla(0, 0%, 50%, 0.5);
+}
+
+ /*=============== Video ===============*/
+ .home_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+} 
+.video_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: -1;
+}
+ /*=============== About Section ===============*/
+ .about{
+  position: relative;
+ }
+.about_container{
+grid-template-columns: 1fr  minmax(0,1fr);
+margin-left: 5rem;
+padding-left: 4rem;
+height: 100vh;
+}
+.about_container .about_section_image{
+border: 3.4px solid var(--section-headings-color);
+position: relative;
+}
+.about_section_image .aboutImg{
+position: absolute;
+right: 2.5rem;
+bottom: 1.5rem;
+width: 100%;
+height: 90%;
+
+}
+.about_data .section_title.about_title{
+  margin-top: 1rem;
+  padding-left: 5rem;
+  font-weight: var(--font-semi-bold);
+  color: var(--section-headings-color);
+  width: 33vw;
+  height: 8.5vh;
+  border-radius: 4px;
+  background-color: var(--heading-bg-color);
+}
+.about_data .about_description{
+  font-weight:var(--font-regular);
+  color: var(--grey-text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  word-spacing: 3px;
+  letter-spacing: .3px;
+  line-height: 1.4rem;
+  padding-left: 4.8rem;
+  text-align:left;
+}
+.about_data .insta_link_btn{
+width: 18vw;
+padding: .5rem 0;
+text-align: center;
+font-size: var(--small-font-size);
+background-color: var(--section-headings-color);
+border-radius: 1.5rem;
+border: none;
+outline: none;
+margin:1.5rem 4.7rem;
+
+}
+.about_data .instaBtn{
+color: var(--white-color);
+}
