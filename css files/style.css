@@ -22,6 +22,7 @@
     --button-hover-color: hsl(0, 17%, 75%);
     --heading-bg-color:hsl(7, 26%, 93%);
     --grey-text-color : hsl(0, 0%, 41%);
+    --gallery-bg-color: hsl(0, 27%, 97%);
     --scroll-bar-thumb: hsl(0, 10%, 86%);
     /*========== Font and typography ==========*/
     /* 1rem = 10px ...*/
@@ -298,8 +299,49 @@ outline: none;
 margin:1.5rem 4.7rem;
 
 }
+.about_data .insta_link_btn:hover{
+background-color: hsl(358, 18%, 76%);
+transition: background-color 0.3s ease; 
+}
 .about_data .instaBtn{
 color: var(--white-color);
+}
+/*=============== Gallery Section ===============*/
+.section.gallery{
+  /* border: 1px solid red; */
+  padding: 3rem .5rem;
+  background-color: var(--gallery-bg-color);
+ }
+ .gallery_container{
+  /* border: 1px solid blue; */
+  margin:0 6rem;
+ }
+.gallery_title{
+font-family: var(--fancy-heading-fonts);
+color: var(--section-headings-color);
+text-align: center;
+font-size:var(--biggest-font-size) ;
+font-weight: var(--font-semi-bold);
+margin-bottom: 1rem;
+}
+.gallery_content .gallery_description{
+  text-align:center;
+  margin-bottom: 1rem;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+.img_container {
+  position: relative;
+}
+.image {
+  transition: transform 0.3s ease;
+  border-radius: .1rem;
+}
+.image:hover {
+  transform: scale(1.1);
 }
  /*=============== Contact Section ===============*/
 .contact{
@@ -308,7 +350,7 @@ color: var(--white-color);
 .contact_data .contact_details{
   margin: 1.5rem 5.5rem;
   padding: 3rem 4rem ;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(3,1fr);
 column-gap: 5rem;
 border-radius: 15px;
 background-image: url('../assets/contact-background.jpeg');
@@ -343,15 +385,15 @@ outline: none;
   font-weight: var(--font-regular);
   font-size: var(--normal-font-size);
 }
-
+ 
  /*=============== Footer ===============*/
  .footer{
-padding: 0 2rem;
+padding: 0 3rem;
 background-color: var(--black-color);
  }
 .footer_container{
   position: relative;
-  row-gap: 3rem;
+  row-gap: 2rem;
   grid-template-columns: 1fr 1fr max-content;
   align-items: center;
 }
@@ -361,10 +403,12 @@ font-size: var(--normal-font-size);
 font-weight: var(--font-regular);
 text-decoration: underline;
 }
+.footer_logo{
+width: 45%; 
+}
 .footer_logo img {
-  width: 52%; 
+  width: 100%; 
   height: auto; 
-
 }
 
 .footer_container .socialmedia_links .follow_us{
