@@ -95,12 +95,6 @@
     padding: 4rem .5rem;
   }
   
-  .section_title {
-    font-size: var(--biggest-font-size);
-    font-family: var(--fancy-heading-fonts);
-    margin-bottom: 1.5rem;
- 
-  }
   
   .main {
     overflow: hidden; 
@@ -268,7 +262,7 @@ width: 100%;
 height: 90%;
 
 }
-.about_data .section_title.about_title{
+.section_title{
   margin-top: 1rem;
   padding-left: 5rem;
   font-weight: var(--font-semi-bold);
@@ -277,8 +271,11 @@ height: 90%;
   height: 8.5vh;
   border-radius: 4px;
   background-color: var(--heading-bg-color);
+  font-size: var(--biggest-font-size);
+  font-family: var(--fancy-heading-fonts);
+  margin-bottom: 1.5rem;
 }
-.about_data .about_description{
+.section_description{
   font-weight:var(--font-regular);
   color: var(--grey-text-color);
   font-family: var(--body-font);
@@ -303,4 +300,85 @@ margin:1.5rem 4.7rem;
 }
 .about_data .instaBtn{
 color: var(--white-color);
+}
+ /*=============== Contact Section ===============*/
+.contact{
+  padding: 2.5rem 0;
+}
+.contact_data .contact_details{
+  margin: 1.5rem 5.5rem;
+  padding: 3rem 4rem ;
+  grid-template-columns: repeat(4,1fr);
+column-gap: 5rem;
+border-radius: 15px;
+background-image: url('../assets/contact-background.jpeg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+border: none;
+outline: none;
+}
+.contact_title{
+  width: 22vw;
+}
+.contact_details .contact_items{
+  display: flex;
+  column-gap: .5rem;
+}
+.contact_details .contact_items img{
+  width: 70%;
+}
+
+.details{
+  display: grid;
+  row-gap: .5rem;
+}
+.details .social_handles_names{
+  color: var(--white-color);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-regular);
+}
+.details h5{
+  color: var(--white-color);
+  font-weight: var(--font-regular);
+  font-size: var(--normal-font-size);
+}
+
+ /*=============== Footer ===============*/
+ .footer{
+padding: 0 2rem;
+background-color: var(--black-color);
+ }
+.footer_container{
+  position: relative;
+  row-gap: 3rem;
+  grid-template-columns: 1fr 1fr max-content;
+  align-items: center;
+}
+.footer_container .contact_info .contact_email{
+color: var(--white-color);
+font-size: var(--normal-font-size);
+font-weight: var(--font-regular);
+text-decoration: underline;
+}
+.footer_logo img {
+  width: 52%; 
+  height: auto; 
+
+}
+
+.footer_container .socialmedia_links .follow_us{
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-regular);
+  margin-bottom: .5rem;
+}
+.footer_container .socialmedia_links .links{
+display: flex;
+column-gap: .6rem;
+
+}
+.footer_container .socialmedia_links .links a img{
+  width: 70%;
+  height: auto;
 }
