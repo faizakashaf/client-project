@@ -101,6 +101,17 @@
     overflow: hidden; 
   }
 
+     /*=============== Scroll Bar ===============*/
+
+::-webkit-scrollbar{
+  width: .6rem;
+  background-color: var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--white-color);
+}
+
+
     /*=============== Header ===============*/
 #header{
 width: 100%;
