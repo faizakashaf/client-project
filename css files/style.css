@@ -84,7 +84,7 @@
   }
    /*=============== REUSABLE CSS CLASSES ===============*/
    .container {
-    max-width: 1120px;
+    max-width: 1200px;
     margin-inline: 1.4rem;
   }
   .grid {
@@ -325,6 +325,7 @@ color: var(--white-color);
  }
  .gallery_container{
   margin:0 6rem;
+  position: relative;
  }
 .gallery_title{
 font-family: var(--fancy-heading-fonts);
@@ -358,6 +359,7 @@ margin-bottom: 1rem;
   transform: scale(1.2);
   cursor: pointer;
 }
+ /*=============== Gallery Image Popup ===============*/
 
 
  /*=============== Contact Section ===============*/
