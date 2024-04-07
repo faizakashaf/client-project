@@ -308,12 +308,11 @@ color: var(--white-color);
 }
 /*=============== Gallery Section ===============*/
 .section.gallery{
-  /* border: 1px solid red; */
+
   padding: 3rem .5rem;
   background-color: var(--gallery-bg-color);
  }
  .gallery_container{
-  /* border: 1px solid blue; */
   margin:0 6rem;
  }
 .gallery_title{
@@ -333,6 +332,10 @@ margin-bottom: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem;
 }
+.thumbnail {
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .img_container {
   position: relative;
 }
@@ -341,8 +344,11 @@ margin-bottom: 1rem;
   border-radius: .1rem;
 }
 .image:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  cursor: pointer;
 }
+
+
  /*=============== Contact Section ===============*/
 .contact{
   padding: 2.5rem 0;
