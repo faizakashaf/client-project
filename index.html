@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Decor Quarters</title>
     <link rel="stylesheet" href="./css files/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -167,55 +170,61 @@
             </div>
         </section>
         <!-- gallery image Pop Up collage  -->
-        <div class="preview_container container grid">
-            <h1 class=" gallery_title">Our Organized Events</h1>
-            <div class=" grid preview_collage">
-                <div><img src="./assets/Client Projects/1st/1.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/1st/2.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/1st/3.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/1st/4.jpg" alt=""></div>
-                <div class="v-stretch"><img src="./assets/Client Projects/2nd/IMG-20240404-WA0077.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/2nd/IMG-20240404-WA0076.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/2nd/IMG-20240404-WA0078.jpg" alt=""></div>
-                <div class="v-stretch"><img src="./assets/Client Projects/2nd/IMG-20240404-WA0079.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/3rd/IMG-20240404-WA0071.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/3rd/IMG-20240404-WA0072.jpg" alt=""></div>
-                <div class="h-stretch"><img src="./assets/Client Projects/3rd/IMG-20240404-WA0073.jpg" alt=""></div>
-                <div class="h-stretch"><img src="./assets/Client Projects/3rd/IMG-20240404-WA0074.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/4th/IMG-20240404-WA0067.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/4th/IMG-20240404-WA0068.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/5th/IMG-20240404-WA0064.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/5th/IMG-20240404-WA0065.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/4th/IMG-20240404-WA0069.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/4th/IMG-20240404-WA0070.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/5th/IMG-20240404-WA0061.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/5th/IMG-20240404-WA0062.jpg" alt=""></div>
-                <div><img src="assets/Client Projects/6th/IMG-20240404-WA0059.jpg" alt=""></div>
-                <div class="h-stretch"><img src="assets/Client Projects/6th/IMG-20240404-WA0057.jpg" alt=""></div>
-                <div><img src="assets/Client Projects/6th/IMG-20240404-WA0058.jpg" alt=""></div>
-                <div class="v-stretch"><img src="./assets/Client Projects/7th/IMG-20240404-WA0055.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/7th/IMG-20240404-WA0054.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/7th/IMG-20240404-WA0056.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/8th/IMG-20240404-WA0049.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/8th/IMG-20240404-WA0050.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/8th/IMG-20240404-WA0051.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/8th/IMG-20240404-WA0052.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/9th/IMG-20240404-WA0046.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/9th/IMG-20240404-WA0048.jpg" alt=""></div>
-                <div class="h-stretch"><img src="./assets/Client Projects/9th/IMG-20240404-WA0047.jpg" alt=""></div>
-                <div class="h-stretch"><img src="./assets/Client Projects/10th/IMG-20240404-WA0044.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/10th/IMG-20240404-WA0043.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/10th/IMG-20240404-WA0045.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/11th/IMG-20240404-WA0039.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/11th/IMG-20240404-WA0040.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/12th/IMG-20240404-WA0036.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/12th/IMG-20240404-WA0037.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/13th/IMG-20240404-WA0027.jpg" alt=""></div>
-                <div class="h-stretch"><img src="./assets/Client Projects/13th/IMG-20240404-WA0029.jpg" alt=""></div>
-                <div><img src="./assets/Client Projects/13th/IMG-20240404-WA0028.jpg" alt=""></div>
-            </div>
-            <div class="show_more_btn">
-                <button id="show_more">Show More</button>
+        <div class="preview_container  grid">
+            <div class="inside_preview">
+                <i class="fa-solid fa-circle-xmark close_icon"></i>
+                <h1 class=" gallery_title">Our Organized Events</h1>
+                <div class=" grid preview_collage">
+                    <div><img src="./assets/Client Projects/1st/1.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/1st/2.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/1st/3.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/1st/4.jpg" alt=""></div>
+                    <div class="v-stretch"><img src="./assets/Client Projects/2nd/IMG-20240404-WA0077.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/2nd/IMG-20240404-WA0076.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/2nd/IMG-20240404-WA0078.jpg" alt=""></div>
+                    <div class="v-stretch"><img src="./assets/Client Projects/2nd/IMG-20240404-WA0079.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/3rd/IMG-20240404-WA0071.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/3rd/IMG-20240404-WA0072.jpg" alt=""></div>
+                    <div class="h-stretch"><img src="./assets/Client Projects/3rd/IMG-20240404-WA0073.jpg" alt=""></div>
+                    <div class="h-stretch"><img src="./assets/Client Projects/3rd/IMG-20240404-WA0074.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/4th/IMG-20240404-WA0067.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/4th/IMG-20240404-WA0068.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/5th/IMG-20240404-WA0064.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/5th/IMG-20240404-WA0065.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/4th/IMG-20240404-WA0069.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/4th/IMG-20240404-WA0070.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/5th/IMG-20240404-WA0061.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/5th/IMG-20240404-WA0062.jpg" alt=""></div>
+                    <div><img src="assets/Client Projects/6th/IMG-20240404-WA0059.jpg" alt=""></div>
+                    <div class="h-stretch"><img src="assets/Client Projects/6th/IMG-20240404-WA0057.jpg" alt=""></div>
+                    <div><img src="assets/Client Projects/6th/IMG-20240404-WA0058.jpg" alt=""></div>
+                    <div class="v-stretch"><img src="./assets/Client Projects/7th/IMG-20240404-WA0055.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/7th/IMG-20240404-WA0054.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/7th/IMG-20240404-WA0056.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/8th/IMG-20240404-WA0049.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/8th/IMG-20240404-WA0050.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/8th/IMG-20240404-WA0051.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/8th/IMG-20240404-WA0052.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/9th/IMG-20240404-WA0046.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/9th/IMG-20240404-WA0048.jpg" alt=""></div>
+                    <div class="h-stretch"><img src="./assets/Client Projects/9th/IMG-20240404-WA0047.jpg" alt=""></div>
+                    <div class="h-stretch"><img src="./assets/Client Projects/10th/IMG-20240404-WA0044.jpg" alt="">
+                    </div>
+                    <div><img src="./assets/Client Projects/10th/IMG-20240404-WA0043.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/10th/IMG-20240404-WA0045.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/11th/IMG-20240404-WA0039.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/11th/IMG-20240404-WA0040.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/12th/IMG-20240404-WA0036.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/12th/IMG-20240404-WA0037.jpg" alt=""></div>
+                    <div><img src="./assets/Client Projects/13th/IMG-20240404-WA0027.jpg" alt=""></div>
+                    <div class="h-stretch"><img src="./assets/Client Projects/13th/IMG-20240404-WA0029.jpg" alt="">
+                    </div>
+                    <div><img src="./assets/Client Projects/13th/IMG-20240404-WA0028.jpg" alt=""></div>
+                </div>
+                <!-- <div class="show_more_btn">
+                    <button id="show_more">Show More</button>
+                </div> -->
+
             </div>
         </div>
 
