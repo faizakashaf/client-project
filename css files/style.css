@@ -10,7 +10,7 @@
 
 
 :root {
-    --header-height: 3.4rem;
+    --header-height: 4rem;
   
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
@@ -23,7 +23,7 @@
     --heading-bg-color:hsl(7, 26%, 93%);
     --grey-text-color : hsl(0, 0%, 41%);
     --gallery-bg-color: hsl(0, 27%, 97%);
-    --scroll-bar-thumb: hsl(0, 10%, 86%);
+    --scroll-bar-thumb: hsl(0, 5%, 91%);
     /*========== Font and typography ==========*/
     /* 1rem = 10px ...*/
     --body-font: "Roboto", sans-serif;
@@ -105,10 +105,10 @@
 
 ::-webkit-scrollbar{
   width: .6rem;
-  background-color: var(--white-color);
+  background-color: var((--white-color));
 }
 ::-webkit-scrollbar-thumb{
-  background-color: var(--white-color);
+  background-color: var(--scroll-bar-thumb);
 }
 
 
@@ -135,7 +135,6 @@ border-bottom: 1.5px solid var(--header-border);
 display: inline-block;
 width: 24vw;
 height: 100%;
-
 }
 .nav .nav_logo .logo_image{
   height: 100%;
@@ -249,7 +248,7 @@ font-weight: var(--font-semi-bold);
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.5); 
   z-index: -1;
 }
  /*=============== About Section ===============*/
@@ -504,9 +503,10 @@ background-color: var(--black-color);
  }
 .footer_container{
   position: relative;
-  row-gap: 2rem;
   grid-template-columns: 1fr 1fr max-content;
   align-items: center;
+  justify-content: center;
+  padding: 1.2rem 0;
 }
 .footer_container .contact_info .contact_email{
 color: var(--white-color);
@@ -515,7 +515,7 @@ font-weight: var(--font-regular);
 text-decoration: underline;
 }
 .footer_logo{
-width: 45%; 
+width: 40%; 
 }
 .footer_logo img {
   width: 100%; 
