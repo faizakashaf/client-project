@@ -10,7 +10,7 @@
 
 
 :root {
-    --header-height: 4rem;
+    --header-height: 3.8rem;
   
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
@@ -23,7 +23,7 @@
     --heading-bg-color:hsl(7, 26%, 93%);
     --grey-text-color : hsl(0, 0%, 41%);
     --gallery-bg-color: hsl(0, 27%, 97%);
-    --scroll-bar-thumb: hsl(0, 5%, 91%);
+    --scroll-bar-thumb: hsl(0, 6%, 85%);
     /*========== Font and typography ==========*/
     /* 1rem = 10px ...*/
     --body-font: "Roboto", sans-serif;
@@ -130,11 +130,13 @@ border-bottom: 1.5px solid var(--header-border);
     align-items: center;
     margin: 0 3.5rem;
    
+   
   }
 .nav .nav_logo{
 display: inline-block;
-width: 24vw;
+width: 22vw;
 height: 100%;
+padding-bottom: .6rem;
 }
 .nav .nav_logo .logo_image{
   height: 100%;
@@ -259,7 +261,7 @@ font-weight: var(--font-semi-bold);
 grid-template-columns: 1fr  minmax(0,1fr);
 margin-left: 5rem;
 padding-left: 4rem;
-height: 100vh;
+height: 90vh;
 }
 .about_container .about_section_image{
 border: 3.4px solid var(--section-headings-color);
@@ -267,7 +269,7 @@ position: relative;
 }
 .about_section_image .aboutImg{
 position: absolute;
-right: 2.5rem;
+right: 2rem;
 bottom: 1.5rem;
 width: 100%;
 height: 90%;
@@ -384,16 +386,20 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-overflow-y: auto;
-
+overflow-y: hidden;
 background-color: rgba(0,0,0,.7);
 z-index: 999;
 }
+
 .preview_container .inside_preview{
   background-color: var(--white-color);
   padding: 2rem 2rem;
   border-radius: 18px;
+  border-top-right-radius: 0;
   position: relative;
+  overflow-y: auto;
+  max-height: 100%;
+ 
 }
 .preview_container .close_icon{
 font-size: var(--closebtn-font-size);
@@ -415,10 +421,7 @@ right: 1.2rem;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   }
-  .preview_collage div img:hover{
-    opacity: 0.9;
-    transition: opacity .4s ease ;
-  }
+  
 .h-stretch{
   grid-column: span 2;
 }
@@ -458,9 +461,9 @@ color: var(--black-color);
   padding: 2.5rem 0;
 }
 .contact_data .contact_details{
-  margin: 1.5rem 5.5rem;
-  padding: 3rem 4rem ;
-  grid-template-columns: repeat(3,1fr);
+margin: 1.5rem 5.5rem;
+padding: 3rem 4rem ;
+grid-template-columns: repeat(3,1fr);
 column-gap: 5rem;
 border-radius: 15px;
 background-image: url('../assets/contact-background.jpeg');
@@ -477,10 +480,11 @@ outline: none;
   display: flex;
   column-gap: .5rem;
 }
-.contact_details .contact_items img{
+.contact_details .contact_items .contact_icons img{
   width: 70%;
+  height: auto;
+  display: block;
 }
-
 .details{
   display: grid;
   row-gap: .5rem;
