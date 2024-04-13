@@ -605,7 +605,8 @@ font-size:var(--bigger-font-size) ;
 }
 .home_data .homeBtn{
  margin-top: .5rem;
- padding: .5rem .6rem;
+ padding: .6rem 1rem;
+ font-size: var(--normal-font-size);
 }
 .scrolldown_arrow{
   width: 2rem;
