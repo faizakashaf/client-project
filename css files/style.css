@@ -719,9 +719,14 @@ row-gap: 2rem;
   .container{
     margin-inline: .6rem;
    }
+   .nav{
+    height: 4.5rem;
+   }
    .nav .nav_logo{
-    /* max-width: auto; */
-    max-height: 50%;
+    width: auto; 
+    max-height: 70%;
+    border: 1px solid red;
+
     }
     .nav_toggle{
       font-size: var(--bigger-font-size);
