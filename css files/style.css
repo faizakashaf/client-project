@@ -680,6 +680,7 @@ row-gap: 2rem;
 .details h5{
   font-size: var(--h3-font-size);
 }
+
 /*=============== Footer ===============*/
 .footer{
   padding: 0 2rem;
@@ -807,6 +808,33 @@ font-size: var(--normal-font-size);
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1.6rem;
 } 
+/*=============== Gallery Image Popup ===============*/
+.preview_container{
+  padding: 0 ;
+  /* display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  background-color: rgba(0,0,0,.7);
+  z-index: 999; */
+  }
+  
+  .preview_container .inside_preview{
+    padding: 1rem;
+    border-radius: 0;
+   
+  }
+  .preview_container .close_icon{
+  right: 1.1rem;
+  }
+  .preview_container .preview_collage{
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-auto-rows: 150px;
+  }
+    
 /*=============== Contact Section ===============*/
 .contact{
   padding: 2.5rem .8rem;
@@ -956,8 +984,6 @@ margin:5rem auto;
     display: grid;
     row-gap: .8rem;
   }
-
-
    
    /*=============== Footer ===============*/
    .footer{
