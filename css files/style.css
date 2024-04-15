@@ -720,7 +720,7 @@ row-gap: 2rem;
     margin-inline: .6rem;
    }
    .nav .nav_logo{
-    max-width: auto;
+    /* max-width: auto; */
     max-height: 50%;
     }
     .nav_toggle{
