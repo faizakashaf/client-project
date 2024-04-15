@@ -721,7 +721,7 @@ row-gap: 2rem;
    }
    .nav .nav_logo{
     width: auto;
-     max-height: 90%;
+    height: 80%;
 
     }
     .nav_toggle{
