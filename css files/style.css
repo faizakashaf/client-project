@@ -145,7 +145,7 @@ border-bottom: 1.5px solid var(--header-border);
 .nav .nav_logo{
 display: inline-block;
 width: auto;
-/* height: 100%; */
+height: 100%;
 padding-bottom: .5rem;
 padding-top:.5rem ; 
 }
@@ -322,7 +322,7 @@ padding: 2rem 0;
 .about_section_image .aboutImg{
 position: absolute;
 right: 2rem;
-/* bottom: 1.5rem; */
+bottom: 1.5rem;
 width: 100%;
 height: 90%;
 }
