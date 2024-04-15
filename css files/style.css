@@ -574,8 +574,9 @@ column-gap: .6rem;
    }
    .nav .nav_logo{
     width: auto;
-     /* max-height: 85%; */
+     max-height: 85%;
      margin-left: .5rem;
+     padding: .5rem 0;
     }
     .nav_toggle{
       font-size: var(--bigger-font-size);
@@ -720,7 +721,7 @@ row-gap: 2rem;
    }
    .nav .nav_logo{
     width: auto;
-     /* max-height: 90%; */
+     max-height: 90%;
 
     }
     .nav_toggle{
@@ -862,6 +863,7 @@ row-gap: 2rem;
     }
   .nav .nav_logo{
   width: auto;
+
   }
 
   .nav_close{
