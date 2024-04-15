@@ -9,6 +9,7 @@ if(toggle){
     toggle.addEventListener("click",()=>{
         menu.classList.add("show_menu");
         close.style.display = "block"; 
+        close.style.color = "black";
     })
 }
 /* ----- hide menu ---- */

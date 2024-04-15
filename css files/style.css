@@ -7,8 +7,6 @@
         src: url('../Sendertime-Font/Sendertime-Font/sendertime.ttf') format('truetype'); 
     }
 
-
-
 :root {
     --header-height: 3.8rem;
   
@@ -146,9 +144,10 @@ border-bottom: 1.5px solid var(--header-border);
   }
 .nav .nav_logo{
 display: inline-block;
-width: 22vw;
+width: auto;
 height: 100%;
-padding-bottom: .6rem;
+padding-bottom: .5rem;
+padding-top:.5rem ; 
 }
 .nav .nav_logo .logo_image{
   height: 100%;
@@ -163,14 +162,14 @@ padding-bottom: .6rem;
     color: var(--black-color);
 }
 
-@media screen and (max-width: 1120px){
+@media screen and (max-width: 1130px){
   .nav_menu{
       position: fixed;
       top: 0;
       right: -100%;
       background-color: var(--white-color);
       -webkit-backdrop-filter: blur(20px);      
-      width: 70%;
+      width: 80%;
       height: 100%;
       padding: 6rem 5rem 0;
       transform: right .6s ease-in;
@@ -196,8 +195,10 @@ padding-bottom: .6rem;
 }
 .nav_close{
   position:absolute;
-    top: 1.4rem;
-    right: 1.5rem;
+    top: 2rem;
+    right: 2rem;
+    color: var(--white-color);
+    font-size: var(--bigger-font-size);
 }
 .show_menu{
   right: 0%;
@@ -316,11 +317,12 @@ height: 90vh;
 .about_container .about_section_image{
 border: 3.4px solid var(--section-headings-color);
 position: relative;
+padding: 2rem 0;
 }
 .about_section_image .aboutImg{
 position: absolute;
 right: 2rem;
-bottom: 1.5rem;
+/* bottom: 1.5rem; */
 width: 100%;
 height: 90%;
 }
@@ -560,6 +562,7 @@ column-gap: .6rem;
   width: 70%;
   height: auto;
 }
+
 /*========= Breakpoints ========= */
 /* For small devices */
 @media screen and (max-width: 390px){
@@ -570,19 +573,15 @@ column-gap: .6rem;
     margin-inline: .6rem;
    }
    .nav .nav_logo{
-    width: 40vw;
-     max-height: 70%;
+    width: auto;
+     max-height: 85%;
     }
     .nav_toggle{
-      font-size: var(--h2-font-size);
+      font-size: var(--bigger-font-size);
     }
     .nav .nav_menu .nav_list_item .list_item .item{
       font-size: var(--h3-font-size);
   
-    }
-    .nav .nav_menu .nav_list_item .list_item.contact_button a{
-    background:none;
-     color: var(--black-color);
     }
      /* --------Home Section ------ */
  .home {
@@ -718,21 +717,18 @@ row-gap: 2rem;
     margin-inline: .6rem;
    }
    .nav .nav_logo{
-    width: 40vw;
-     max-height: 70%;
+    width: auto;
+     max-height: 90%;
 
     }
     .nav_toggle{
-      font-size: var(--h2-font-size);
+      font-size: var(--bigger-font-size);
     }
     .nav .nav_menu .nav_list_item .list_item .item{
       font-size: var(--h3-font-size);
   
     }
-    .nav .nav_menu .nav_list_item .list_item.contact_button a{
-    background:none;
-     color: var(--black-color);
-    }
+
      /* --------Home Section ------ */
  .home {
   height: 55vh;
@@ -869,7 +865,6 @@ row-gap: 2rem;
 /* For Tablet Size  devices */
 @media (max-width: 768px) and (min-width: 576px) {
   .nav{
-     height: 5rem;
       margin: 0 1rem;
     }
   .nav .nav_logo{
@@ -884,30 +879,27 @@ row-gap: 2rem;
   .nav .nav_menu .nav_list_item{
 margin:5rem auto;
   }
-  .nav .nav_menu .nav_list_item .list_item .item{
-    font-size: var(--h2-font-size); 
-  }
+
   
    /* --------Home Section ------ */
    .home {
-    height: 75vh;
+    height: 80vh;
   }
 
   .home_data {
     padding: 1.4rem 2rem;
   }
   .home_data .home_title{
-  font-size:var(--biggest-font-size) ;
+  font-size:var(--bigger-font-size) ;
   margin-bottom: 1rem;
   }
   .home_data .home_description{
-    font-size: var(--bigger-font-size);
+    font-size: var(--normal-font-size);
     margin: 2rem 1.5rem;
   }
   .home_data .homeBtn{
-   font-size: var(--h2-font-size);
-   margin-top: 1rem;
-   padding: 1rem 1.5rem;
+   font-size: var(--normal-font-size);
+   padding: .5rem 1.5rem;
   }
   .scrolldown_arrow{
     width: 3rem;
@@ -915,39 +907,34 @@ margin:5rem auto;
   /*=============== About Section ===============*/
   
   .about_container{
-  grid-template-columns: 1fr  minmax(0,1fr);
+  grid-template-columns: 1fr;
   margin-left: 0;
   padding-left: 3rem;
   height: auto;
+  row-gap: 2rem;
   }
   .about_container .about_section_image{
-  border: 3.4px solid var(--section-headings-color);
-  position: relative;
   height: 55vh;
+  padding: 1.5rem 0;
 
   }
   .about_section_image .aboutImg{
-  position: absolute;
   right: 1.7rem;
-  bottom: 1.9rem;
-  width: 100%;
-  max-height: 90%;
   }
   .section_title{
-    margin-top:0;
-    font-weight: var(--font-semi-bold);
-   max-width: auto;
+    margin: 0 auto ;
+   width: 45vw;
     height: 6.5vh;
-    font-size: var(--biggest-font-size);
   }
   .section_description{
     font-size: var(--h2-font-size);
-    line-height: 1.8rem;
-    padding-left: 1.2rem;
+    padding-left: .2rem;
+    line-height: 1.9rem;
+    margin: 1.5rem 0;
+
   }
   .about_data .insta_link_btn{
   width: auto;
-  margin-left: 1rem;
   font-size: var(--h2-font-size);
   }
   
@@ -956,14 +943,14 @@ margin:5rem auto;
     padding: 2.5rem 0;
   }
   .contact_data .contact_details{
-  margin: 1.5rem 2rem;
-  padding: 3rem 2.5rem ;
+  margin: 1.5rem 1.2rem;
+  padding: 3rem 1rem ;
   grid-template-columns: repeat(2,1fr);
- gap: 3rem;
- column-gap: 2rem;
+ row-gap: 2.5rem;
+ column-gap: 1rem;
   }
   .contact_title{
-    width: 35vw;
+    width: 45vw;
   }
 
   .details{
@@ -971,48 +958,101 @@ margin:5rem auto;
     row-gap: .8rem;
   }
 
-  .details .social_handles_names{
-    font-size: var(--h2-font-size);
-  }
-  .details h5{
-    font-size: var(--h2-font-size);
-  }
+
    
    /*=============== Footer ===============*/
    .footer{
-  padding: 0 1.5rem;
+  padding: 2rem .5rem;
   background-color: var(--black-color);
    }
   .footer_container{
-    position: relative;
     grid-template-columns: 1fr 1fr max-content;
-    align-items: center;
-    justify-content: center;
     padding: 1.2rem 0;
-  }
-  .footer_container .contact_info .contact_email{
-  font-size: var(--h2-font-size);
 
   }
+
   .footer_logo{
-  width: 60%; 
+  width: 50%; 
   }
  
-  
-  .footer_container .socialmedia_links .follow_us{
-    font-size: var(--h2-font-size);
-    
-  }
+
  
   .footer_container .socialmedia_links .links a img{
     width: 90%;
     height: auto;
   }
 }
+@media screen and (min-width:768px) and (max-width:1050px){
+ 
+  /* --------Home Section ------ */
+   .home {
+    max-height: 100vh;
+  }
+   /*=============== About Section ===============*/
+
+  .about_container{
+    margin-left: 0;
+    padding-left: 3rem;
+    height: auto;
+  }
+  .about_container .about_section_image{
+    padding: 1.2rem 0;
+  }
+  .about_section_image .aboutImg{
+    right: 2rem;
+
+    }
+  .section_title{
+    margin:0 auto;
+    width: auto;
+    height:6.5vh;
+    margin-bottom: 1.5rem;
+  }
+  .section_description{
+    font-size: var(--h3-font-size);
+    padding-left:1rem;
+  }
+  .about_data .insta_link_btn{
+  width: auto;
+  font-size: var(--h3-font-size);
+  }
+ 
+   /*=============== Contact Section ===============*/
+  .contact{
+    padding: 2.5rem 0;
+  }
+  .contact_data .contact_details{
+  margin: 1.5rem 2rem;
+  padding: 3rem 2rem ;
+  column-gap: 3.5rem;
+  }
+  .contact_title{
+    width: 40vw;
+  }
+
+   /*=============== Footer ===============*/
+   .footer{
+  padding: 0 2rem;
+  background-color: var(--black-color);
+   }
+  .footer_container{
+    padding: 2rem 0;
+  }
+  
+  .footer_container .socialmedia_links .follow_us{
+    font-size: var(--normal-font-size);
+  }
+
+}
+
 /* For large devices */
 @media screen and (min-width : 1150px){
+  .nav_logo{
+    margin-left: 1.3rem;
+padding: .7rem 0;
+  }
   .container{
-    margin-inline : auto;
+    /* margin-inline : auto; */
   }
   .section{
     padding-block: 4rem 2rem;
@@ -1030,5 +1070,14 @@ margin:5rem auto;
     flex-direction: row;
     column-gap: 2.5rem;
   }
+  .about_container{
+    grid-template-columns: 1fr  minmax(0,1fr);
+    margin-left: 5rem;
+    padding-left: 4rem;
+    height: 90vh;
+    }
+    .section_title{
+      height: 9.5vh;
+    }
 
 }
