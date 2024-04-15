@@ -660,6 +660,19 @@ font-size: var(--normal-font-size);
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1.6rem;
 }
+.preview_container {
+  padding: 0 1.4rem;
+}
+.preview_container .inside_preview{
+  border-radius: 0;
+  border-top-left-radius: 15px;
+}
+ .v-stretch{
+    grid-row: span 1;
+  }
+  .h-stretch{
+    grid-column: span 1;
+  }
 /*=============== Contact Section ===============*/
 .contact{
   padding: 2.5rem .8rem;
@@ -955,7 +968,23 @@ margin:5rem auto;
   width: auto;
   font-size: var(--h2-font-size);
   }
+    /*=============== Gallery and popup  Section ===============*/
+    .gallery_container {
+      margin: 0 4rem;
+    }
   
+    .row {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 2rem;
+    }
+    .preview_container {
+      padding: 0 3.5rem;
+    }
+    .preview_container .inside_preview {
+      padding: 2rem;
+      border-radius: 0;
+      border-top-left-radius: 15px;
+    }
    /*=============== Contact Section ===============*/
   .contact{
     padding: 2.5rem 0;
@@ -1032,7 +1061,25 @@ margin:5rem auto;
   width: auto;
   font-size: var(--h3-font-size);
   }
- 
+    /*=============== Gallery Section ===============*/
+    .gallery_container {
+      margin: 0 5rem;
+    }
+  
+    .row {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .preview_container {
+      padding: 0 3rem;
+    }
+  
+    .preview_container .inside_preview {
+      padding: 2.5rem;
+      border-radius: 0;
+      border-top-left-radius: 15px;
+
+    }
    /*=============== Contact Section ===============*/
   .contact{
     padding: 2.5rem 0;
