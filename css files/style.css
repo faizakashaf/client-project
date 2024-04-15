@@ -574,7 +574,7 @@ column-gap: .6rem;
    }
    .nav .nav_logo{
     width: 170px;
-     max-height: 40px ;
+     max-height: 50px ;
      margin-left: .5rem;
      padding: .5rem 0;
     }
@@ -724,7 +724,7 @@ row-gap: 2rem;
    }
    .nav .nav_logo{
     width: 170px; 
-    max-height: 40px;
+    max-height: 50px;
 
     }
     .nav_toggle{
