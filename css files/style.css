@@ -573,7 +573,7 @@ column-gap: .6rem;
     margin-inline: .6rem;
    }
    .nav .nav_logo{
-    width: 150px;
+    width: 170px;
      max-height: 40px ;
      margin-left: .5rem;
      padding: .5rem 0;
@@ -723,9 +723,8 @@ row-gap: 2rem;
     height: 4.5rem;
    }
    .nav .nav_logo{
-    width: 150px; 
+    width: 170px; 
     max-height: 40px;
-    border: 1px solid red;
 
     }
     .nav_toggle{
