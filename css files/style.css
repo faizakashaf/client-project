@@ -720,9 +720,8 @@ row-gap: 2rem;
     margin-inline: .6rem;
    }
    .nav .nav_logo{
-    width: auto;
-    height: 80%;
-
+    max-width: auto;
+    max-height: 50%;
     }
     .nav_toggle{
       font-size: var(--bigger-font-size);
