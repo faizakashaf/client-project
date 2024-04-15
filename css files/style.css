@@ -574,7 +574,7 @@ column-gap: .6rem;
    }
    .nav .nav_logo{
     width: auto;
-     max-height: 85%;
+     /* max-height: 85%; */
      margin-left: .5rem;
     }
     .nav_toggle{
@@ -720,7 +720,7 @@ row-gap: 2rem;
    }
    .nav .nav_logo{
     width: auto;
-     max-height: 90%;
+     /* max-height: 90%; */
 
     }
     .nav_toggle{
@@ -855,15 +855,7 @@ row-gap: 2rem;
     width: 80%;
   }
 }
-/* @media screen and (min-width :500px) and (max-width:576px){
-.about_container{
-  margin-top:28rem;
-}
-.section_description{
-  font-size: var(--h3-font-size);
-}
-} */
-/* For Tablet Size  devices */
+
 @media (min-width: 576px)and (max-width: 768px)  {
   .nav{
       margin: 0 1rem;
