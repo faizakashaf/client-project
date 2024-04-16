@@ -897,6 +897,9 @@ row-gap: 2rem;
   .nav{
       margin: 0 1rem;
     }
+    .nav_menu{
+      width: 60%;
+    }
   .nav .nav_logo{
   width: auto;
 
