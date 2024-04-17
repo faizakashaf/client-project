@@ -30,7 +30,7 @@ links.forEach (link => {
 })
 
 
-// --------- Home to About Scroll Arrow ---------//
+// --------- Home to About Scroll Arrow Direct ---------//
 
 document.addEventListener("DOMContentLoaded", function() {
     const aboutSection = document.getElementById("about");
@@ -62,7 +62,7 @@ function showPreviewContainer() {
     body.style.overflow = "hidden";
 }
 
-//-----Pop Up clsing Working -----------//
+//-----Pop Up closing Working -----------//
 const popupPageCloseButton = document.querySelector(".close_icon");
 popupPageCloseButton.addEventListener("click", () => {
 previewContainer.style.display = "none";

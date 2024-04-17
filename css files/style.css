@@ -6,6 +6,10 @@
         font-family: 'sendertime';
         src: url('../Sendertime-Font/Sendertime-Font/sendertime.ttf') format('truetype'); 
     }
+    @font-face {
+      font-family: 'arabella';
+      src: url('../arabella/Arabella.ttf') format('truetype'); 
+  }
 
 :root {
     --header-height: 3.8rem;
@@ -106,6 +110,7 @@
   
   .section {
     padding: 4rem .5rem;
+
   }
   
   
@@ -249,7 +254,6 @@ background-color: var(--black-color);
 
 .home_data {
   text-align: center; 
-  /* margin-top: 4rem; */
   margin-top: 2.5rem;
   padding: 1.4rem 1rem;
 
@@ -257,21 +261,12 @@ background-color: var(--black-color);
 .home_data .home_title{
 font-size:var(--main-heading-font-size) ;
 color: var(--white-color);
-/* margin-bottom: .5rem; */
 margin-bottom: 2rem;
 font-weight: var(--font-semi-bold);
 }
-/* .home_data .home_description{
-  font-size: var(--h3-font-size);
-  color: var(--white-color);
-  margin-bottom: 1.3rem;
-  font-family: var(--body-font);
-  font-weight: var(--font-regular);
-} */
 .home_data .homeBtn{
  font-size: var(--small-font-size);
  font-weight: var(--font-semi-bold);
- /* margin-top: .8rem; */
 }
 .scrolldown_arrow{
   width: 2.5rem;
@@ -647,7 +642,6 @@ border: 4px solid var(--section-headings-color);
   text-align: center;
   width: auto;
   margin: 0 auto ;
-  /* width: 45vw; */
    height: 6.5vh;
 }
 .section_description{
@@ -759,7 +753,6 @@ row-gap: 2rem;
 
      /* --------Home Section ------ */
  .home {
-  /* height: 60vh; */
   height: 50vh;
 }
 .home_container {
@@ -794,7 +787,6 @@ padding-left: 0.5rem;
 
 }
 .about_section_image{
-  /* height: 30vh; */
   height: 35vh;
   width: auto;
 border: 4px solid var(--section-headings-color);
@@ -1040,7 +1032,7 @@ margin:5rem auto;
     height: auto;
   }
 }
-@media screen and (min-width:768px) and (max-width:1120px){
+@media screen and (min-width:768px) and (max-width:1130px){
   .nav_menu{
     width: 60%;
   }
@@ -1125,15 +1117,19 @@ margin:5rem auto;
 
 /* For large devices */
 @media screen and (min-width : 1150px){
+  .container {
+    max-width: 1800px; 
+    margin-inline: auto; 
+  }
+  .nav{
+    margin: 0 4rem;
+  }
   .nav_logo{
     margin-left: 1.3rem;
 padding: .7rem 0;
   }
-  .container{
-    /* margin-inline : auto; */
-  }
   .section{
-    padding-block: 4rem 2rem;
+    padding-block: 4rem 3rem;
   }
 
   .nav_close,
@@ -1153,7 +1149,7 @@ padding: .7rem 0;
   }
   .about_container{
     margin-left: 3.8rem;
-    /* height: auto; */
+    margin-right: 3.8rem;
     }
     .about_container .about_section_image{
     height:  75vh;
@@ -1165,4 +1161,7 @@ padding: .7rem 0;
     bottom: 1.4rem; 
     width: 100%;
     }
+
 }
+
+
