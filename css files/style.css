@@ -1152,7 +1152,7 @@ padding: .7rem 0;
     margin-right: 3.8rem;
     }
     .about_container .about_section_image{
-    height:  75vh;
+    height:  70vh;
     padding: 0;
     }
     .about_section_image .aboutImg{
@@ -1160,6 +1160,10 @@ padding: .7rem 0;
      right: 2rem;
     bottom: 1.4rem; 
     width: 100%;
+    }
+    .gallery_container {
+      margin: 0 5rem; 
+     
     }
 
 }
