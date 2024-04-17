@@ -630,7 +630,7 @@ padding-left: 0.5rem;
 .about_container .about_section_image{
   border: none;
   position: relative;
-  height: 45vh;
+  height: 35vh;
   }
 .about_section_image .aboutImg{
   position: absolute;
@@ -759,7 +759,8 @@ row-gap: 2rem;
 
      /* --------Home Section ------ */
  .home {
-  height: 60vh;
+  /* height: 60vh; */
+  height: 50vh;
 }
 .home_container {
   row-gap: 1.5rem;
@@ -793,7 +794,8 @@ padding-left: 0.5rem;
 
 }
 .about_section_image{
-  height: 40vh;
+  /* height: 30vh; */
+  height: 35vh;
   width: auto;
 border: 4px solid var(--section-headings-color);
 
@@ -923,7 +925,7 @@ margin:5rem auto;
   
    /* --------Home Section ------ */
    .home {
-    height: 80vh;
+    height: 70vh;
   }
 
   .home_data {
