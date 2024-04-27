@@ -329,8 +329,7 @@ position: absolute;
  right: 2rem;
 bottom: 1.5rem; 
 width: 100%;
-height: 90%;~
-
+height: 90%;
 }
 .section_title{
   margin-top: 1rem;
@@ -525,7 +524,8 @@ outline: none;
   font-size: var(--normal-font-size);
   font-weight: var(--font-regular);
 }
-.details h5{
+.details h5,
+.details a{
   color: var(--white-color);
   font-weight: var(--font-regular);
   font-size: var(--normal-font-size);
