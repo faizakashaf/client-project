@@ -701,7 +701,8 @@ row-gap: 2rem;
 .details .social_handles_names{
   font-size: var(--h3-font-size);
 }
-.details h5{
+.details h5,
+.details a{
   font-size: var(--h3-font-size);
 }
 
@@ -867,7 +868,8 @@ row-gap: 2rem;
 .details .social_handles_names{
   font-size: var(--h3-font-size);
 }
-.details h5{
+.details h5,
+.details a{
   font-size: var(--h3-font-size);
 }
 /*=============== Footer ===============*/
